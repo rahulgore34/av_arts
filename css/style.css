@@ -1,0 +1,287 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #35424a;
+    color: #fff;
+    padding-top: 15px;
+    min-height: 44px;
+    border-bottom: 3px solid #e8491d;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+header ul {
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    float: left;
+}
+
+header .brand {
+    float: left;
+}
+
+header .brand h1 {
+    margin: 0;
+}
+
+header .brand img.logo {
+    width: 80px;
+    margin: 0;
+    display: inline-block;
+}
+header nav {
+    float: right;
+    margin-top: 5px;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#showcase {
+    min-height: 400px;
+    background: url(../imgs/showcase.jpg) no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+#newsletter {
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+#newsletter h2 {
+    color: #54545F;
+}
+#contact {
+    padding: 15px;
+    color: #54545F;
+    text-align: center;
+}
+
+#boxes {
+    margin-top: 20px;
+}
+.box {
+    width: 30%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.box img {
+    width: 150px;
+    transition: transform 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.box img:hover {
+    transform: scale(1.2);
+}
+
+#boxes-dir {
+    margin-top: 10px;
+}
+
+#boxes-dir h3 {
+    margin-top: 5px;
+    /* margin-left: -18px; */
+}
+
+#deals .deal-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+
+#deals .deals {
+}
+#deals .deal-list {
+    cursor: pointer;
+    list-style-type: square;
+}
+
+#deals li {
+    color: #433BA3;
+    transition: all 0.8s ease-in;
+    padding: 10px 0 10px 0;
+    font-weight: bold;
+}
+
+#deals  li:hover {
+    -ms-transform: translateX(5px); /* IE 9 */
+    -webkit-transform: translateX(5px); /* Safari */
+    transform:  translateX(5px);
+    color: #464459;
+}
+
+#contact-info .address-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+}
+
+#contact-info  .address {
+    padding: 10px;
+}
+
+#contact-info  .meet {
+    width: 100%;
+    height: 216px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+.dark {
+    background-color: #35424a;
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.current {
+color: rgb(130, 80, 163);
+}
+
+/* Work gallary */
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media(max-width: 768px) {
+    header {
+        padding-bottom: 20px;
+    }
+    header .brand, header nav {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header li {
+        float: none;
+        padding: 5px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    #boxes .box, #boxes-dir .box {
+        float: none;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    #deals .deal-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 5px;
+    }
+
+    #contact-info .address-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .meet {
+        display: none;
+    }
+
+    .addr-line-1 {
+        display: block;
+    }
+
+    #showcase h1 {
+        font-size: 10vw;
+    }
+}
