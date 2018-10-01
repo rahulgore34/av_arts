@@ -289,4 +289,24 @@ div.desc {
     #newsletter h2 {
         margin-left: 0;
     }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
 }
+
+@media (max-width: 320px) {
+  header nav li a {
+      font-size: 14px;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.addr-line-2 {
+    display: block;
+}
+ }
